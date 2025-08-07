@@ -26,7 +26,7 @@ cursor = con.cursor()
 
 @eel.expose
 def playAssistantSound():
-    music_file = "www/assets/audio/start_sound.mp3"  # Keep it MP3
+    music_file = "jarvis-structure/assets/audio/start_sound.mp3"  # Keep it MP3
     pygame.mixer.init()
     pygame.mixer.music.load(music_file)
     pygame.mixer.music.play()
@@ -190,7 +190,7 @@ def whatsApp(mobile_no, message, flag, name):
 #     ]
 
 #     # completion = client.chat.completions.create(
-#         model="llama3-8b-8192",
+#         # model="llama3-8b-8192",
 #         messages=messages,
 #         temperature=1,
 #         max_tokens=512,
@@ -208,7 +208,7 @@ def whatsApp(mobile_no, message, flag, name):
 #     speak(response)
 #     return response
 
-# Only runs if this file is executed directly
+# # Only runs if this file is executed directly
 # if __name__ == "__main__":
 #     user_query = input("Ask Jarvis: ")
 #     chatBot(user_query)

@@ -6,7 +6,7 @@ from engine.command import *
 from engine.auth import recoganize
 def start():
     
-    eel.init("www")
+    eel.init("jarvis-structure")
 
     playAssistantSound()
     @eel.expose
